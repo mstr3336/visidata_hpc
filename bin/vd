@@ -1,4 +1,11 @@
-#!/home/mstr3336/misc_prj/visidata/env/bin/python3
+#!/bin/sh
+"true" '''\'
+exec "$(dirname "$(readlink -f "$0")")"/python "$0" "$@"
+'''
+
+__doc__ = """You will need to deliberately set your docstrings though"""
+# https://stackoverflow.com/a/57567228/9238801
+
 
 import visidata.main
 
